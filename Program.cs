@@ -4,23 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dz4
+namespace Dz1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int value = 500;
+            Console.Write("Введите число : ");
+            int value = int.Parse(Console.ReadLine());
 
-
-            for (int i = 0; i < 20;)
+            if (value % 2 == 0)
             {
-                if (value % 13 == 0 || value % 17 == 0)
-                {
-                    Console.WriteLine($"Данное число  удовлетворяет условиям: " + value);
-                    i++;
-                }
-                value++;
+                Console.Write($"Число {value} является чётным");
+            }
+            else
+            {
+                Console.Write($"Число {value} является нечётным");
+            }
+
+            if (value % 10 == 7)
+            {
+                Console.WriteLine($" и заканчиваеться на 7");
             }
         }
     }
