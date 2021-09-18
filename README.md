@@ -1,1 +1,0 @@
-# Titov_Artem_255
